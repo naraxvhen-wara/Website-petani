@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beras Asli Wamena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Beras Asli Wamena</h1>
+        <p>Menghubungkan Petani dan Pembeli Secara Langsung</p>
+        <nav>
+            <a href="#petani">Untuk Petani</a>
+            <a href="#produk">Beli Beras</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Selamat Datang di Lumbung Padi Jayawijaya</h2>
+        <p>Website ini didedikasikan untuk memasarkan hasil panen padi petani asli Wamena, Witaya.</p>
+    </section>
+
+    <section id="petani">
+        <h2>Bagi Petani: Pasarkan Hasil Panenmu</h2>
+        <p>Daftarkan beras kamu dengan harga terbaik.</p>
+        <!-- Nanti, form akan ditambahkan di sini -->
+        <button onclick="toggleForm()">Tambahkan Produk Baru</button>
+        
+        <form id="form-produk" style="display:none;">
+            <input type="text" id="nama-beras" placeholder="Nama Varietas Beras">
+            <input type="number" id="harga-beras" placeholder="Harga per Kg">
+            <input type="file" id="foto-beras" accept="image/*">
+            <button type="button" onclick="simpanProduk()">Simpan Produk</button>
+        </form>
+    </section>
+
+    <section id="produk">
+        <h2>Bagi Pembeli: Beras Berkualitas Langsung dari Sawah</h2>
+        <div id="daftar-produk">
+            <!-- Daftar produk akan dimunculkan di sini oleh JavaScript -->
+        </div>
+    </section>
+
+    <footer>
+        <p>Hubungi Kami: naraxvhen@gmail.com | 085366404008</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
